@@ -73,7 +73,7 @@ const addBookHandler = (request, h) => {
 
   // Server gagal memasukkan buku karena alasan umum (generic error).
   const response = h.response({
-    status: 'error',
+    status: 'fail',
     message: 'Buku gagal ditambahkan',
   });
   response.code(500);
